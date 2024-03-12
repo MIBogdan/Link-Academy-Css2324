@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 3px;
   font-size: 15px;
   font-weight: 600;
-  color: #222222;
+  color: var(--font-color);
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -686,6 +686,10 @@ section {
 /*--------------------------------------------------------------
 # Featured Services
 --------------------------------------------------------------*/
+.featured-services {
+  background-color: var(--bg-color);
+}
+
 .featured-services .icon-box {
   padding: 30px;
   position: relative;
@@ -883,6 +887,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background-color: var(--bg-color);
+}
+
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
@@ -907,6 +915,13 @@ section {
   color: #3b8af2;
   font-size: 28px;
   transition: ease-in-out 0.3s;
+}
+.services h3 {
+  color: var(--font-color);
+}
+
+.services .section-title > p {
+  color: var(--font-color);
 }
 .services .icon-box h4 {
   font-weight: 700;
@@ -1021,6 +1036,9 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio { 
+  background-color: var(--bg-color);
+}
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -1037,9 +1055,17 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #444444;
+  color: var(--font-color);
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+}
+
+.portfolio .section-title > h3 {
+  color: var(--font-color);
+}
+
+.portfolio .section-title > p {
+  color: var(--font-color);
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   color: var(--mycolor);
@@ -1389,6 +1415,12 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background-color: var(--bg-color);
+}
+.contact .section-title > p {
+  color: var(--font-color);
+}
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1404,7 +1436,7 @@ section {
 }
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: var(--font-color);
   font-weight: 700;
   margin: 10px 0;
 }
@@ -1413,6 +1445,7 @@ section {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
+  color: var(--font-color);
 }
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
@@ -1511,7 +1544,7 @@ section {
   background: #f1f6fe;
 }
 #footer .footer-newsletter {
-  padding: 50px 0;
+  padding: 100px;
   background: #f1f6fe;
   text-align: center;
   font-size: 15px;
@@ -1557,7 +1590,7 @@ section {
 }
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--bg-color);
 }
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
@@ -1568,6 +1601,7 @@ section {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
+  color: var(--font-color);
 }
 #footer .footer-top .footer-contact h3 span {
   color: var(--mycolor);
@@ -1577,17 +1611,18 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  color: #777777;
+  color: var(--font-color);
 }
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #444444;
+  color: var(--font-color);
   position: relative;
   padding-bottom: 12px;
 }
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
+  color: var(--font-color);
 }
 #footer .footer-top .footer-links ul {
   list-style: none;
@@ -1599,17 +1634,19 @@ section {
   color: var(--mycolor);
   font-size: 18px;
   line-height: 1;
+  
 }
 #footer .footer-top .footer-links ul li {
   padding: 10px 0;
   display: flex;
   align-items: center;
+  
 }
 #footer .footer-top .footer-links ul li:first-child {
   padding-top: 0;
 }
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: var(--font-color);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
